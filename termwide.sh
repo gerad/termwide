@@ -38,8 +38,8 @@ PROMPT_COMMAND=prompt_command
 
 function termwide {
     local esc_host="\[\033[1;37m\]"
-    if [ `hostname -s` == 'gecs' ]; then esc_host=""; fi
-    local esc_gray="\[\033[1;30m\]"
+    if [ `hostname -s` == 'bit' ]; then esc_host=""; fi
+    local esc_gray="\[\033[1;37m\]"
     local esc_nocolor="\[\033[0m\]"
 
     case $TERM in
